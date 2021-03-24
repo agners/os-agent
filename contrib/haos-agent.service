@@ -1,6 +1,6 @@
 [Unit]
 Description=Home Assistant OS Agent
-Requires=dbus.service udisks2.service
+Requires=dbus.service
 ConditionPathExists=/run/dbus/system_bus_socket
 
 [Service]
