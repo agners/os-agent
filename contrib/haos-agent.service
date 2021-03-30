@@ -8,6 +8,7 @@ ConditionPathExists=/run/dbus/system_bus_socket
 Type=notify
 Restart=always
 RestartSec=5s
+Environment="DBUS_SYSTEM_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket"
 ExecStart=/usr/bin/os-agent
 
 [Install]
