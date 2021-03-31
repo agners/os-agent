@@ -1,8 +1,8 @@
 [Unit]
 Description=Home Assistant OS Agent
 DefaultDependencies=no
-Requires=dbus.service udisks2.service
-ConditionPathExists=/run/dbus/system_bus_socket
+Requires=dbus.socket udisks2.service
+After=dbus.socket
 
 [Service]
 Type=notify
